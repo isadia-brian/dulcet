@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  position: absolute;
+  height: 100vh;
+  padding: 90px 70px 60px 70px;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+
+  z-index: 50;
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    bottom: 16px;
+    width: 100%;
+    left: 0;
+  }
+}
