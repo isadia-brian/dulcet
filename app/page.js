@@ -11,17 +11,11 @@ import Link from "next/link";
 
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-
-
 export default function Home() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const handleImageLoad = () => {
     setImagesLoaded(true);
   };
-
-  
-
-
 
   return (
     <main className="relative text-white h-screen w-full overflow-hidden">
@@ -92,15 +86,11 @@ export default function Home() {
           </div>
         </div>
 
-        
-
         <div className="absolute z-50 md:top-1/2  md:right-0  md:px-4  md:grid md:justify-items-end md:gap-8 small flex   justify-center md:justify-normal space-x-8  ">
           <FaFacebook className="h-4 w-4 cursor-pointer hover:text-blue-600 transition duration-200 ease-out  hover:scale-150" />
           <FaTwitter className="h-4 w-4 cursor-pointer hover:text-blue-500 transition duration-200 ease-out  hover:scale-150" />
           <FaInstagram className="h-4 w-4 cursor-pointer hover:text-pink-500 transition duration-200 ease-out  hover:scale-150" />
         </div>
-
-        
       </div>
     </main>
   );
